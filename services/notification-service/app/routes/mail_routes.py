@@ -14,3 +14,7 @@ def mail_register():
 @mail_bp.route("/cambio-contraseña", methods=['POST'])
 def cambio_contraseña():
     return cambio_contraseña_controller()
+
+@mail_bp.route("/creacion-ticket", methods=['POST'])
+def creacion_ticket():
+    return creacion_ticket_controller()
